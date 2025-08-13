@@ -1,0 +1,24 @@
+{
+  "drivers": [
+    { "name": "Amit", "currentShiftHours": 6, "pastWeekHours": [6,8,7,7,7,6,10] },
+    { "name": "Priya", "currentShiftHours": 6, "pastWeekHours": [10,9,6,6,6,7,7] }
+  ],
+  "routes": [
+    { "routeId": "1", "distanceKm": 25, "trafficLevel": "High", "baseTimeMinutes": 125 },
+    { "routeId": "2", "distanceKm": 12, "trafficLevel": "High", "baseTimeMinutes": 48 },
+    { "routeId": "3", "distanceKm": 8, "trafficLevel": "Medium", "baseTimeMinutes": 40 },
+    { "routeId": "4", "distanceKm": 15, "trafficLevel": "Low", "baseTimeMinutes": 60 },
+    { "routeId": "5", "distanceKm": 10, "trafficLevel": "Low", "baseTimeMinutes": 45 },
+    { "routeId": "6", "distanceKm": 20, "trafficLevel": "Medium", "baseTimeMinutes": 80 },
+    { "routeId": "7", "distanceKm": 18, "trafficLevel": "High", "baseTimeMinutes": 90 }
+  ],
+  "orders": [
+    { "orderId": "1", "valueRs": 2594, "assignedRoute": "7", "deliveryMinutes": 127 },
+    { "orderId": "2", "valueRs": 1835, "assignedRoute": "6", "deliveryMinutes": 79 },
+    { "orderId": "3", "valueRs": 1420, "assignedRoute": "5", "deliveryMinutes": 50 },
+    { "orderId": "4", "valueRs": 1999, "assignedRoute": "4", "deliveryMinutes": 66 },
+    { "orderId": "5", "valueRs": 850,  "assignedRoute": "3", "deliveryMinutes": 45 },
+    { "orderId": "6", "valueRs": 1100, "assignedRoute": "2", "deliveryMinutes": 53 },
+    { "orderId": "7", "valueRs": 2200, "assignedRoute": "1", "deliveryMinutes": 140 }
+  ]
+}
