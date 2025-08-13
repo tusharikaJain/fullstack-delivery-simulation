@@ -2,20 +2,14 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const mongoURI =
-      process.env.NODE_ENV === 'production'
-        ? process.env.MONGO_URI_PROD
-        : process.env.MONGO_URI_LOCAL;
+    const mongoURI = process.env.MONGO_URI_PROD; // Production URI in Render env vars
+    console.log(`🔌 Connecting to MongoDB...`);
 
-    const conn = await mongoose.connect(mongoURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-
-    console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
+    await mongoose.connect(mongoURI);
+    console.log(`✅ MongoDB Connected`);
   } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    process.exit(1); // Exit process on failure
+    console.error(`❌ MongoDB Connection Error: ${error.message}`);
+    process.exit(1);
   }
 };
 
